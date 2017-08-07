@@ -8,9 +8,9 @@ Table of contents
 - [About](#about)
 - [Requirements](#requirements)
 - [Installation](#installation)
-    - [Raspbian packages](#raspniam-packages)
-    - [bcm2835](#bcm2835)
-    - [Python MedIOEx module](#python-medioex-module)
+    - [Installing the Raspbian packages](#installing-the-raspniam-packages)
+    - [Installing bcm2835 C library](#installing-bcm2835-c-library)
+    - [Installing Python MedIOEx module](#installing-python-medioex-module)
 
 Requirements
 ============
@@ -19,16 +19,16 @@ Requirements
 
 Installation
 ============
-### Raspbian packages
+### Installing the Raspbian packages
 ```bash
 apt-get install build-essential python3-dev python3-pip
 ```
 
-### bcm2835
+### Installing bcm2835 C library
 Download the latest version from [bcm2835](http://www.airspayce.com/mikem/bcm2835/)
 ```bash
 tar zxvf bcm2835-1.xx.tar.gz
-cd bcm2835-1.*
+cd bcm2835-1.xx
 ./configure
 make
 make check
@@ -36,7 +36,7 @@ make installcheck
 make install
 ```
 
-### Python MedIOEx module
+### Installing Python MedIOEx module
 ```bash
 pip3 install medioex
 ```
