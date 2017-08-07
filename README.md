@@ -8,7 +8,7 @@ Table of contents
 - [About](#about)
 - [Requirements](#requirements)
 - [Installation](#installation)
-    - [Installing the Raspbian packages](#installing-the-raspniam-packages)
+    - [Installing the Raspbian packages](#installing-the-raspbian-packages)
     - [Installing bcm2835 C library](#installing-bcm2835-c-library)
     - [Installing Python MedIOEx module](#installing-python-medioex-module)
 
