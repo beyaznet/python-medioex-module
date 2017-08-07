@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, Extension
 
 module = Extension('medioex',
                    sources=['medioex.c'],
@@ -13,14 +13,14 @@ setup(name='medioex',
       url = 'https://github.com/beyaznet/python-medioex-module',
       author = 'Beyaz R&D Team',
       author_email = 'arge@beyaz.net',
-      license = 'GNU GPLv3'
+      license = 'GNU GPLv3',
       keywords = 'raspberry pi medioex taliabee',
       python_requires='>=3',
       ext_modules=[module],
       classifiers=[
           'Development Status :: 4 - Beta',
           'Intended Audience :: Developers',
-          'License :: OSI Approved :: GNU GPLv3',
+          'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
           'Programming Language :: C'
       ]
-))
+)
