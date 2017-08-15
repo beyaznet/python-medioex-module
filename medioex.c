@@ -196,7 +196,7 @@ static int pe2a_AI_getVal_cnv_choosing(const int PIN, char *ptr)
 	
 	else if(PIN == pe2a_GPIO_J13_1)
 	{
-		ptr[0] = 0b10000110; //conversion ch0 
+		ptr[0] = 0b10011110; //conversion ch0
 		ptr[1] = 0b01100000; //setup
 		ptr[2] = 0b00111100; //ave
 		
@@ -205,7 +205,7 @@ static int pe2a_AI_getVal_cnv_choosing(const int PIN, char *ptr)
 	
 	else if(PIN == pe2a_GPIO_J13_2)
 	{
-		ptr[0] = 0b10001110; //conversion ch1
+		ptr[0] = 0b10000110; //conversion ch1
 		ptr[1] = 0b01100000; //setup
 		ptr[2] = 0b00111100; //ave
 		
@@ -214,7 +214,7 @@ static int pe2a_AI_getVal_cnv_choosing(const int PIN, char *ptr)
 	
 	else if(PIN == pe2a_GPIO_J13_3)
 	{
-		ptr[0] = 0b10010110; //conversion ch2
+		ptr[0] = 0b10001110; //conversion ch2
 		ptr[1] = 0b01100000; //setup
 		ptr[2] = 0b00111100; //ave
 		
@@ -223,7 +223,7 @@ static int pe2a_AI_getVal_cnv_choosing(const int PIN, char *ptr)
 	
 	else if(PIN == pe2a_GPIO_J13_4)
 	{
-		ptr[0] = 0b10011110; //conversion ch3
+		ptr[0] = 0b10010110; //conversion ch3
 		ptr[1] = 0b01100000; //setup
 		ptr[2] = 0b00111100; //ave
 		
