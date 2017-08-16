@@ -637,6 +637,11 @@ ai_read(PyObject *self, PyObject *args)
 	int pin, val;
 	if (!PyArg_ParseTuple(args, "i", &pin)) return NULL;
 	pin = to_ai_pin(pin);
+
+	// pe2a_AI_getVal returns the previous read value. Therefore we get the
+	// value in the second read.
+	pe2a_AI_getVal(pin);
+	delay(100);
 	val = pe2a_AI_getVal(pin);
 	return PyLong_FromLong(val);
 }

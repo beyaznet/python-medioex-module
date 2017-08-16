@@ -8,7 +8,7 @@ module = Extension('medioex',
                    )
 
 setup(name='medioex',
-      version='0.1.11',
+      version='0.1.12',
       description='Python MedIOEx module',
       url = 'https://github.com/beyaznet/python-medioex-module',
       author = 'Beyaz R&D Team',
