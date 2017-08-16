@@ -640,8 +640,9 @@ ai_read(PyObject *self, PyObject *args)
 
 	// pe2a_AI_getVal returns the previous read value. Therefore we get the
 	// value in the second read.
+	delay(50);
 	pe2a_AI_getVal(pin);
-	delay(100);
+	delay(50);
 	val = pe2a_AI_getVal(pin);
 	return PyLong_FromLong(val);
 }
@@ -666,6 +667,12 @@ temp_read(PyObject *self, PyObject *args)
 	int getval;
 	double val;
 	if (!PyArg_ParseTuple(args, "i", &getval)) return NULL;
+
+	// pe2a_getTemperature returns the previous read value. Therefore we
+	// get the value in the second read.
+	delay(50);
+	pe2a_getTemperature(getval);
+	delay(50);
 	val = pe2a_getTemperature(getval);
 	return PyFloat_FromDouble(val);
 }
